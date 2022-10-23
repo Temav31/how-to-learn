@@ -184,7 +184,7 @@
 
 .feynman {
   min-height: 890px;
-  background-color: #fff;
+  background-color: #f2f2f2;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -206,7 +206,7 @@
   line-height: 51px;
   text-align: center;
   margin: 70px auto 0 auto;
-  z-index: 2;
+  z-index: 1;
 }
 
 .feynman__link {
@@ -218,7 +218,7 @@
   font-weight: normal;
   line-height: 51px;
   color: #2F80ED;
-  z-index: 2;
+  z-index: 1;
 }
 
 .feynman__photo {
