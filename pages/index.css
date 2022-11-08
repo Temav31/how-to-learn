@@ -83,7 +83,7 @@
 @import url(../block/kaufman/kaufman.css);
 @import url(../block/kaufman/__triangle/kaufman__triangle.css);
 /* Свойства table__theme_dark */
-@import url(../block/table/__theme/table__theme_dark.css);
+@import url(../block/table/__theme/table_theme_dark.css);
 @import url(../block/table/__cell/_theme/table__cell_theme_dark.css);
 @import url(../block/table/__heading/_theme/table__heading_theme_dark.css);
 @import url(../block/table/__text/_theme/table__text_theme_dark.css);
