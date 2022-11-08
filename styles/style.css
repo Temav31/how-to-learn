@@ -1,3 +1,13 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -35,6 +45,7 @@
 }
 
 .header__title {
+  outline: solid;
   width: 730px;
   font-size: 102px;
   font-weight: 600;
@@ -78,6 +89,8 @@
   width: 568px;
   background-color: #2F80ED;
   z-index: 0;
+  animation: rotation 20s linear infinite running;
+  transform: rotate(-15deg);
 }
 
 .description {
@@ -130,11 +143,13 @@
 }
 
 .digits {
+  outline: solid;
   padding-top: 100px;
   margin-bottom: 100px;
 }
 
 .section-title {
+  outline: solid;
   width: 60%;
   margin: 0 auto;
   font-size: 60px;
@@ -144,6 +159,7 @@
 }
 
 .section-subtitle {
+  outline: solid;
   width: 60%;
   margin: 20px auto 0 auto;
   font-size: 24px;
@@ -196,7 +212,7 @@
   line-height: 1.15;
   text-align: center;
   width: 648px;
-  margin: 100px auto 0 auto;
+  margin: 0 auto;
   z-index: 1;
 }
 
@@ -241,12 +257,14 @@
 .section-title_theme_dark {
   color: #fff;
   margin: 90px auto 20px auto;
+  position: relative;
   z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   margin: 0 auto 0 auto;
   color: #fff;
+  position: relative;
   z-index: 1;
 }
 
@@ -285,6 +303,8 @@
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  animation: rotation 20s linear infinite running;
+  transform: rotate(-15deg);
 }
 
 .footer {
@@ -359,4 +379,185 @@
   height: 16px;
   width: 16px;
   margin-right: 10px;
+}
+
+
+.techniques {
+  outline: solid;
+  width: 80%;
+  padding-top: 100px;
+  margin: 0 auto 0 auto;
+}
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.cards__item {
+  outline: solid;
+  width: 240px;
+  margin: 0;
+  margin-right: 100px;
+}
+
+.cards__item:nth-child(3n+3) {
+  margin-right: 0
+}
+
+.cards__image {
+  outline: solid;
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.cards__title {
+  outline: solid;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.cards__description {
+  outline: solid;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 23px;
+  text-align: center;
+  margin: 16px 0 0 0;
+}
+
+
+.video {
+  margin: 0;
+  padding-top: 100px;
+}
+
+.video__iframes {
+  outline: solid;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  bottom: -50px;
+}
+
+.video__iframe {
+  margin-right: 20px;
+}
+
+.video__iframe:last-child {
+  margin-right: 0;
+}
+
+.oakley {
+  background-color: #f2f2f2;
+  padding: 160px 0 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.khan {
+  background-color: #f2f2f2;
+  padding-top: 105px;
+}
+
+.khan__container {
+  outline: solid;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  outline: solid;
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  outline: solid;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.khan__quote {
+  outline: solid;
+  width: 790px;
+  margin: 50px auto 36px 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  outline: solid;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.khan__quote-author-subline {
+  outline: solid;
+  margin: 10px 0 68px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.khan__book-pic {
+  margin-right: 10px;
+  width: 608px;
+  height: 620px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.khan__buy-link {
+  color: #2f80ed;
+  text-decoration: none;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.resources {
+  padding-top: 100px;
+  padding-bottom: 217px;
+  margin: 0 auto;
+}
+
+.resources__logo-zone {
+  outline: solid;
+  margin: 80px auto 0 auto;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recources__logo {
+  height: 38px;
+  width: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

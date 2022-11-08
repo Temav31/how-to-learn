@@ -1,0 +1,7 @@
+.logo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 32px;
+  width: 228px;
+  z-index: 1;
+}
