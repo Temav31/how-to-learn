@@ -4,5 +4,5 @@
   margin-right: 100px;
 }
 .cards__item:nth-child(3n+3) {
-  margin-right: 0
+  margin-right: 0;
 }
