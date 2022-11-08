@@ -1,5 +1,6 @@
-/* Свойства header */
+@import url(../vendor/normalize.css);
 @import url(../block/header/page/page.css);
+/* Свойства header */
 @import url(../block/header/__title/header__title.css);
 @import url(../block/header/__subtitle/header__subtitle.css);
 @import url(../block/header/__link/header__link.css);
